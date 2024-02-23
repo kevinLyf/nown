@@ -46,7 +46,7 @@
             <div>
                 <h2 class="text-gray-900 dark:text-gray-200">{{ date('Y M H:i:s', strtotime($post->created_at))  }}</h2>
                 <div
-                    class="w-full text-gray-900 bg-gray-50 dark:bg-gray-700 border border-gray-300 overflow-x-hidden p-2 rounded dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-2">
+                    class="w-full text-gray-900 bg-gray-50 dark:bg-gray-700 border border-gray-300 overflow-x-hidden p-2 rounded hover:border-gray-400  hover:scale-y-105 duration-100  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-2">
                     <a href="/posts/{{ $post->id  }}">
                         <h3 class="font-bold text-xl">{{ $post->title  }}</h3>
                         <p class="text-gray-400 dark:text-gray-300 line-clamp-2">{{ $post->description }}</p>
