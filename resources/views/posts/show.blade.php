@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'nown - create a post')
+@section('title', $post->title)
 
 @section('content')
     <section class="max-w-5xl">
