@@ -58,8 +58,8 @@
                                     d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                             </svg>
                             <span class="font-bold ">
-                    23
-                    </span>
+                                23
+                            </span>
                         </div>
 
                         <div class="flex items-center gap-2 mt-2 text-gray-400 dark:text-gray-300">
@@ -70,8 +70,8 @@
                                       d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                             </svg>
                             <span class="font-bold line-clamp-1 ">
-                    Kevin Feitosa
-                    </span>
+                                Kevin Feitosa
+                            </span>
                         </div>
                     </div>
                 </div>
