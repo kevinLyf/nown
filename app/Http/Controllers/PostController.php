@@ -30,7 +30,7 @@ class PostController extends Controller
     /**
      * Create a new post.
      */
-    public function store(StorePostRequest $request)
+    public function store(StorePostRequest $request): RedirectResponse
     {
         $post = new Post;
         $post->title = $request->title;
