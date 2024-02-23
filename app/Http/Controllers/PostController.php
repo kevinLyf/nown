@@ -7,7 +7,6 @@ use App\Models\Post;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use Nette\Schema\ValidationException;
 
 class PostController extends Controller
 {
@@ -16,7 +15,9 @@ class PostController extends Controller
      */
     public function index(): View
     {
-        return view('welcome');
+        $posts = Post::all();
+
+        return view('welcome', ['posts' => $posts]);
     }
 
     /**

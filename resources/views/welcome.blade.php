@@ -42,19 +42,13 @@
                 </div>
             </div>
         @endif
-        @for($i = 0; $i < 10; $i++)
+        @foreach($posts as $post)
             <div>
-                <h2 class="text-gray-900 dark:text-gray-200">2023 November 29, 09:00 h</h2>
+                <h2 class="text-gray-900 dark:text-gray-200">{{ date('Y M H:i:s', strtotime($post->created_at))  }}</h2>
                 <div
                     class="w-full text-gray-900 bg-gray-50 dark:bg-gray-700 border border-gray-300 overflow-x-hidden p-2 rounded dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-2">
-                    <h3 class="font-bold text-xl">How start a new project with Docker?</h3>
-                    <p class="text-gray-400 dark:text-gray-300 line-clamp-2">Mussum Ipsum, cacilds vidis litro abertis.
-                        Manduma
-                        pindureta
-                        quium dia nois paga. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non
-                        ipsum
-                        felis. Interagi no mé, cursus quis, vehicula ac nisi. Suco de cevadiss deixa as pessoas mais
-                        interessantis.</p>
+                    <h3 class="font-bold text-xl">{{ $post->title  }}</h3>
+                    <p class="text-gray-400 dark:text-gray-300 line-clamp-2">{{ $post->description }}</p>
 
                     <div class="flex items-center gap-2">
                         <div class="flex items-center gap-2 mt-2 text-gray-400 dark:text-gray-300">
@@ -83,7 +77,7 @@
                 </div>
             </div>
 
-        @endfor
+        @endforeach
     </section>
 
 @endsection
