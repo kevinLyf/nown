@@ -29,7 +29,18 @@
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 flex flex-col justify-between">
         <ul class="space-y-2 font-medium">
             <li>
-                <a href="#"
+                <a href="/posts/create"
+                   class="flex items-center p-2 bg-gray-800 dark:bg-slate-950 rounded-lg text-white hover:bg-gray-500 dark:hover:bg-gray-500 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                    </svg>
+                    <span class="ms-3">Create post</span>
+                </a>
+            </li>
+            <li>
+                <a href="/"
                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg
                         class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
