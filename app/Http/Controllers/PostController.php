@@ -35,11 +35,7 @@ class PostController extends Controller
     {
         $post = Post::findOrFail($id);
 
-        if(isset($post)){
-            return redirect('/', '403');
-        }
-
-        return view('posts.create', ['post' => $post]);
+        return view('posts.show', ['post' => $post]);
     }
 
     /**
