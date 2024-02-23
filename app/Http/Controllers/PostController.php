@@ -29,6 +29,20 @@ class PostController extends Controller
     }
 
     /**
+     * Show a post by id.
+     */
+    public function show($id): View | RedirectResponse
+    {
+        $post = Post::findOrFail($id);
+
+        if(isset($post)){
+            return redirect('/', '403');
+        }
+
+        return view('posts.create', ['post' => $post]);
+    }
+
+    /**
      * Create a new post.
      */
     public function store(StorePostRequest $request): RedirectResponse
