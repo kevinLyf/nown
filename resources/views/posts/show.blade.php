@@ -41,7 +41,7 @@
                 @csrf
                 <textarea id="message" name="message" rows="4"
                           class="lock p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-5"
-                          placeholder="Write your thoughts here..."></textarea>
+                          placeholder="Write your thoughts here...">{{ old('message') }}</textarea>
                 <div>
                     <input type="submit" value="Send"
                            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 cursor-pointer"/>
