@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    font-family: "Nunito", sans-serif;
+[x-cloak] {
+    display: none;
 }

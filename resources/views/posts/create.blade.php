@@ -4,15 +4,15 @@
 
 @section('content')
     <section>
-        <h1 class="text-gray-600 dark:text-gray-200 font-bold text-3xl">Create a new post</h1>
+        <h1 class="text-gray-600 font-bold text-3xl">Create a new post</h1>
         @if($errors->any())
             <div
-                    class="flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 border border-red-400 dark:bg-gray-800 dark:text-red-400 mt-5"
-                    role="alert">
+                class="flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 border border-red-400 mt-5"
+                role="alert">
                 <svg class="flex-shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true"
                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                     <path
-                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                 </svg>
                 <span class="sr-only">Danger</span>
                 <div>
@@ -33,7 +33,7 @@
                 <label for="title" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Title</label>
                 <input type="text" id="title" name="title" value="{{ old('title') }}"
                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                       placeholder="Ex: how start..." />
+                       placeholder="Ex: how start..."/>
             </div>
 
             <div>
@@ -41,7 +41,7 @@
                        class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Description</label>
                 <textarea id="description" type="text" name="description" rows="4"
                           class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                          placeholder="Write your thoughts here..." >{{ @old('description')  }}</textarea>
+                          placeholder="Write your thoughts here...">{{ @old('description')  }}</textarea>
             </div>
 
             <div>

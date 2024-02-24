@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\PostController;
+use \App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,21 @@ use \App\Http\Controllers\PostController;
 Route::get('/', [PostController::class, 'index']);
 
 Route::prefix('/posts')->group(function () {
-    Route::post('/', [PostController::class, 'store']);
-    Route::get('/create', [PostController::class, 'create']);
+    Route::middleware(['auth'])->group(function () {
+        Route::post('/', [PostController::class, 'store']);
+        Route::get('/create', [PostController::class, 'create'])->middleware('auth');
+    });
     Route::get('/{id}', [PostController::class, 'show']);
 });
 
+Route::post('/comment/{id}', [CommentController::class, 'store'])->middleware('auth');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
