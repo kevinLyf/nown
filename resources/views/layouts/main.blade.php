@@ -97,7 +97,7 @@
                                 <path fill-rule="evenodd"
                                       d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
                             </svg>
-                            <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                            <span class="flex-1 ms-3 whitespace-nowrap">Logout</span>
                         </a>
                     </form>
                 </li>
