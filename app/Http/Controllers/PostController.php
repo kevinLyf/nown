@@ -16,7 +16,16 @@ class PostController extends Controller
      */
     public function index(): View
     {
-        $posts = Post::orderBy('created_at', 'desc')->get();
+        $search = request('search');
+
+        if ($search) {
+            $posts = Post::where([
+                ['title', 'like', '%' . $search . '%']
+            ])->orderBy('created_at', 'desc')->get();
+        } else {
+            $posts = Post::orderBy('created_at', 'desc')->get();
+        }
+
         return view('welcome', ['posts' => $posts]);
     }
 
