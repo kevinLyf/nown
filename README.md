@@ -1,5 +1,7 @@
 <h1 align="center">Nown</h1>
 
+![nown](/public/preview.png)
+
 ## 💻 Description
 
 <p>Creation of a project to simulate a question and answer website focused on issues related to programming and technology. The objective is to create an interactive platform where users can share knowledge, resolve doubts and discuss relevant topics in the area.</p>
