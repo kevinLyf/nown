@@ -43,7 +43,7 @@ class PostController extends Controller
     public function show($id): View|RedirectResponse
     {
         $post = Post::findOrFail($id);
-        $comments = Comment::where('post_id', $id)->orderBy('created_at', 'desc')->get();
+        $comments = Comment::where('post_id', $id)->orderBy('created_at', 'asc')->get();
 
         return view('posts.show', ['post' => $post, 'comments' => $comments]);
     }
