@@ -28,7 +28,7 @@
     ```
 3. Create .env file and put the contents of .env.example:
     ```bash
-        touch .env.txt
+        touch .env
     ```
 4. Run docker-compose:
    ```bash
