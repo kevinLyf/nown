@@ -36,19 +36,20 @@
    ```bash
         docker compose up
     ```
-
 4. Create nown database in phpmyadmin or mysql bash:
    ```sql
         CREATE DATABASE nown;
     ```
-
-5. The next step is to install the dependencies:
+5. Run migrations:
+   ```bash
+        php artisan migration
+    ```
+6. The next step is to install the dependencies:
     ```bash
         composer i
         npm i
     ```
-
-6. Run an application for development mode:
+7. Run an application for development mode:
     ```bash
          npm run dev
          php artisan serve
